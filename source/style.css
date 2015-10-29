@@ -8,6 +8,7 @@ footer {
   border: 0px solid #fff;
 }
 
+<<<<<<< HEAD
 .navbar {
   border-radius: 0px;
 }
@@ -33,4 +34,20 @@ footer {
 
 .btn-default {
   color: rgb(228, 0, 0);
+=======
+.media{
+	padding: 5px;
+	border: 1px solid #E7E7E7;
+	background-color: #F8F8F8;
+	color: #777;
+}
+
+.media-body{
+	vertical-align: middle;
+}
+
+#userGrid{
+	margin: 10px;
+	padding: 10px;
+>>>>>>> 52e32be8f66303871561d2159c48520329d8b7d3
 }

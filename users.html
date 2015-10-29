@@ -4,6 +4,7 @@
    <meta charset = "utf-8">
    <meta name = "author" content = "MNL">
    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <!--<script src="source/script.js"> </script>-->
    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
    <link rel="stylesheet" type="text/css" href="source/style.css">
    <title>Notflix</title>
@@ -26,10 +27,9 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Movies</a></li>
-              <li><a href="users.html">Users <span class="sr-only">(current)</span></a></li>
+              <li><a href=".\index.html">Movies</a></li>
+              <li class="active"><a href="#">Users <span class="sr-only">(current)</span></a></li>
             </ul>
-
             <form class="navbar-form navbar-left" role="search">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Search">
@@ -43,41 +43,50 @@
       </nav>
     </header>
 
-    <div class="row">
-      <div class="col-xs-6 col-md-3">
-        <a href="#" class="thumbnail">
-          <img src="http://ia.media-imdb.com/images/M/MV5BMTQ0NTgzMzA2N15BMl5BanBnXkFtZTcwNTI1NjQ2MQ@@._V1_SX300.jpg" alt="movie">
-        </a>
-      </div>
+    <div class="row" id="userGrid">
 
       <div class="col-xs-6 col-md-3">
-        <div class= "cover">
-          <a href="#" class="thumbnail">
-            <img src="http://ia.media-imdb.com/images/M/MV5BMTQ1MjQwMTE5OF5BMl5BanBnXkFtZTgwNjk3MTcyMDE@._V1_SX300.jpg" alt="frozen">
+        <a href="#">
+         <div class="media">
+            <div class="media-left media-middle">
+              <img class="media-object" src="https://pixabay.com/static/uploads/photo/2015/03/04/22/35/head-659651__180.png" alt="useravatar">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Nickname</h4>
+                FirstName SurName
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+         <a href="#">
+          <div class="media">
+             <div class="media-left media-middle">
+               <img class="media-object" src="https://pixabay.com/static/uploads/photo/2015/03/04/22/35/head-659651__180.png" alt="useravatar">
+             </div>
+             <div class="media-body">
+               <h4 class="media-heading">Nickname</h4>
+                 FirstName SurName
+             </div>
+           </div>
           </a>
-        </div>
-      </div>
-
-      <div class="col-xs-6 col-md-3">
-        <a href="#" class="thumbnail">
-          <img src="http://ia.media-imdb.com/images/M/MV5BMTI1MTY2OTIxNV5BMl5BanBnXkFtZTYwNjQ4NjY3._V1_SX300.jpg" alt="movie">
-        </a>
-      </div>
-      <div class="col-xs-6 col-md-3">
-        <a href="#" class="thumbnail">
-          <img src="http://ia.media-imdb.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SX300.jpg" alt="movie">
-        </a>
-      </div>
-      <div class="col-xs-6 col-md-3">
-        <a href="#" class="thumbnail">
-          <img src="http://ia.media-imdb.com/images/M/MV5BMjEyMjcyNDI4MF5BMl5BanBnXkFtZTcwMDA5Mzg3OA@@._V1_SX300.jpg" alt="movie">
-        </a>
-      </div>
+       </div>
+       <div class="col-xs-6 col-md-3">
+         <a href="#">
+          <div class="media">
+             <div class="media-left media-middle">
+               <img class="media-object" src="https://pixabay.com/static/uploads/photo/2015/03/04/22/35/head-659651__180.png" alt="useravatar">
+             </div>
+             <div class="media-body">
+               <h4 class="media-heading">Nickname</h4>
+                 FirstName SurName
+             </div>
+           </div>
+          </a>
+       </div>
     </div>
 
     <footer> copyright &copy; www.notflix.nl</footer>
-
   </body>
 
-   <script src="source/script.js"> </script>
 </html>
