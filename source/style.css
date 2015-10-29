@@ -8,7 +8,7 @@ footer {
   border: 0px solid #fff;
 }
 
-<<<<<<< HEAD
+
 .navbar {
   border-radius: 0px;
 }
@@ -34,12 +34,17 @@ footer {
 
 .btn-default {
   color: rgb(228, 0, 0);
-=======
+}
+
 .media{
-	padding: 5px;
+	padding: 10px;
+	background-color: #FFF;
 	border: 1px solid #E7E7E7;
-	background-color: #F8F8F8;
 	color: #777;
+}
+
+.media-object{
+	border: 1px solid #E7E7E7;
 }
 
 .media-body{
@@ -48,6 +53,4 @@ footer {
 
 #userGrid{
 	margin: 10px;
-	padding: 10px;
->>>>>>> 52e32be8f66303871561d2159c48520329d8b7d3
 }
