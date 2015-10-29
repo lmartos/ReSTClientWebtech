@@ -6,3 +6,19 @@ footer {
 .thumbnail {
   border: 0px solid #fff;
 }
+
+.media{
+	padding: 5px;
+	border: 1px solid #E7E7E7;
+	background-color: #F8F8F8;
+	color: #777;
+}
+
+.media-body{
+	vertical-align: middle;
+}
+
+#userGrid{
+	margin: 10px;
+	padding: 10px;
+}
