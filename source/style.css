@@ -1,8 +1,36 @@
 footer {
+  text-align: center;
   border-top: 1px solid #F8F8F8;
   color: #777;
 }
 
 .thumbnail {
   border: 0px solid #fff;
+}
+
+.navbar {
+  border-radius: 0px;
+}
+
+.navbar-default .navbar-brand {
+  color: #E40000;
+  font-weight: 500;
+  text-shadow: 1px 1px #777;
+}
+
+.navbar-default {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: rgb(228, 0, 0);
+  background-color: rgba(214, 138, 138, 0.37);
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: rgb(228, 0, 0);
+}
+
+.btn-default {
+  color: rgb(228, 0, 0);
 }
