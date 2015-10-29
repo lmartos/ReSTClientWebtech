@@ -1,1 +1,6 @@
-script.js
+$(document).ready(function() {
+	$(".thumbnail").mouseover(thumbnailHoverHandler);
+
+});
+
+
