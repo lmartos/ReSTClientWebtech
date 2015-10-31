@@ -86,3 +86,8 @@ footer {
 	max-width: 50%;
 	float: none;
 }
+
+#registrationMessage{
+  text-align: center;
+  font-size: 1em;
+}

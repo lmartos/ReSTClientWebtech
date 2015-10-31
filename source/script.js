@@ -1,6 +1,4 @@
-$(document).ready(function() {
-	$(".thumbnail").mouseover(thumbnailHoverHandler);
-
-});
-
+$("#registerNavButton").click(function(){
+		window.location.replace("./register.html");
+	});
 

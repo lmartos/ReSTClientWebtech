@@ -1,25 +1,32 @@
 $("#registerButton").click(function(){
-	$('#registrationForm').submit(function(){
-		var values = $(this).serialize();
-		registerUser(values);
+	if($(this).val() == "Back"){
+		parent.history.back();
+	}else{
+		registerUser();
+	}
 
-	});
 });
 
 
-function registerUser(values){
-	
-	console.log(values);
+function registerUser(){
+	var firstName = document.getElementById("firstName").value;
+	var surnamePrefix = document.getElementById("surnamePrefix").value;
+	var lastName = document.getElementById("lastName").value;
+	var nickname = document.getElementById("nickname").value;
+	var password = document.getElementById("password").value;
+
+	console.log("{\"nickname\": \""+nickname+"\", \"firstName\": \""+firstName+"\", \"surnamePrefix\": \""+surnamePrefix+"\", \"lastName\": \""+lastName+"\", \"password\": \""+password+"\"}");	
 	
 	$.ajax({
 			type: "POST",
-			dataType: "json",
+			contentType: "application/json",
 			url: "http://localhost:8080/RestServer/api/users/register",
-			data: values,
-			//data: "nickname="+values[0]+"&firstName="+values[1]+"&surnamePrefix="+values[2]+"&lastName="+values[3]+"&password="+values[4],
+			data: "{\"nickname\": \""+nickname+"\", \"firstName\": \""+firstName+"\", \"surnamePrefix\": \""+surnamePrefix+"\", \"lastName\": \""+lastName+"\", \"password\": \""+password+"\"}",
+		//	"nickname="+nickname+"&firstName="+firstName+"&surnamePrefix="+surnamePrefix+"&lastName="+lastName+"&password="+password,
 		
 	}).fail(function(jqXHR,	textStatus, errorThrown ) {	
- 		console.log(""+errorThrown);	
+ 		console.log(""+errorThrown);
+
  		if(errorThrown == "Expectation Failed"){
 	 		$('#registrationMessage').empty();
 			$('#registrationMessage').append("Vul alstublieft alle velden in.)");
@@ -29,6 +36,11 @@ function registerUser(values){
 		}
 	}).done(function(data) {  	
 		$('#registrationMessage').empty();
-		$('##registrationMessage').append("Gefeliciteerd, u bent successvol geregistreerd.");
+
+		$('#registrationMessage').append("Gefeliciteerd, u bent successvol geregistreerd.");
+		$('.formInput').empty();
+		$('#registerButton').html("Back");
+		$('#registerButton').val("Back");
    	});
 }
+

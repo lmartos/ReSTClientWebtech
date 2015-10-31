@@ -32,9 +32,11 @@
 
             <form class="navbar-form navbar-right" role="search">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
+                <input type="text" class="form-control" placeholder="Username">
+                <input type="text" class="form-control" placeholder="Password">
               </div>
-              <button type="submit" class="btn btn-default">Submit</button>
+              <button type="submit" class="btn btn-default" id="loginNavButton">Login</button>
+              <button type="submit" class="btn btn-default" id="registerNavButton">Register</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
             </ul>
@@ -45,7 +47,8 @@
 
    <div class="container">
             <form class="form-horizontal" role="form" id="registrationForm">
-                <h2 id="registrationHeader">Register</h2>
+               <div class="formInput">
+                 <h2 id="registrationHeader">Register</h2>
                 <div class="form-group">
                     <label for="nickname" class="col-sm-3 control-label">Nickname</label>
                     <div class="col-sm-9">
@@ -75,7 +78,8 @@
                     <div class="col-sm-9">
                         <input type="password" name="password" id="password" placeholder="Password" class="form-control">
                     </div>
-                </div>  
+                </div> 
+                </div> 
                 <div class="form-group">
                     <div class="col-sm-9 col-sm-offset-3">
                         <button type="button" class="btn btn-primary btn-block" id="registerButton">Register</button>
