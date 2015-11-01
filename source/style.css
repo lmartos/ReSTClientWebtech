@@ -91,3 +91,14 @@ footer {
   text-align: center;
   font-size: 1em;
 }
+
+a.userBadge {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+text-indent: -9999px; //these two lines are to hide my actual link text.
+overflow: hidden; //these two lines are to hide my actual link text.
+}
+}

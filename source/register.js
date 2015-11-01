@@ -1,6 +1,6 @@
 $("#registerButton").click(function(){
 	if($(this).val() == "Back"){
-		parent.history.back();
+		window.history.go(-2);
 	}else{
 		registerUser();
 	}
